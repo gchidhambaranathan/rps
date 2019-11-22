@@ -1,7 +1,6 @@
 package com.chidha.rps.entity;
 
 
-import com.chidha.rps.enums.String;
 
 import javax.persistence.*;
 

@@ -1,34 +1,16 @@
-package com.chidha.rps.entity;
+package com.chidha.rps.model;
 
-
-import javax.persistence.*;
-
-@Entity(name = "PAYMENT")
-public class PaymentEntity {
-
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "PAYMENT_ID")
+public class PaymentResponse {
     private long id;
-
-
-    @Column(name = "AMOUNT")
     private long amount;
-
-    @Column(name = "TERM")
     private String term;
-
-
-    @Column(name = "PAYMENT_DATE")
-    private  String paymentDate;
-
-
-    @JoinColumn(name = "STUDENT_ADMISSION_ID")
     private long studentId;
+    private String studentName;
+    private String studentStandard;
+    private String studentSection;
+    private String paymentDate;
 
-    public PaymentEntity() {
-    }
+
 
     public long getId() {
         return id;
@@ -62,6 +44,30 @@ public class PaymentEntity {
         this.studentId = studentId;
     }
 
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public String getStudentStandard() {
+        return studentStandard;
+    }
+
+    public void setStudentStandard(String studentStandard) {
+        this.studentStandard = studentStandard;
+    }
+
+    public String getStudentSection() {
+        return studentSection;
+    }
+
+    public void setStudentSection(String studentSection) {
+        this.studentSection = studentSection;
+    }
+
     public String getPaymentDate() {
         return paymentDate;
     }
@@ -69,4 +75,6 @@ public class PaymentEntity {
     public void setPaymentDate(String paymentDate) {
         this.paymentDate = paymentDate;
     }
+
+
 }

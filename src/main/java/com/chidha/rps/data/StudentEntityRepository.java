@@ -12,4 +12,5 @@ import java.util.List;
 public interface StudentEntityRepository extends CrudRepository<StudentEntity, Long> {
 
     List<StudentEntity> findStudentEntitiesByAdmissionNumberAndStandard(long admissionNumber, String standard);
+    List<StudentEntity> findStudentEntitiesByStandard(String standard);
 }

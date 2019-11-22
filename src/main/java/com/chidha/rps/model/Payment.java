@@ -1,11 +1,21 @@
 package com.chidha.rps.model;
 
 public class Payment {
+    private long id;
     private long amount;
     private String term;
     private long studentId;
+    private String paymentDate;
 
     public Payment() {
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public long getAmount() {
@@ -30,5 +40,13 @@ public class Payment {
 
     public void setStudentId(long studentId) {
         this.studentId = studentId;
+    }
+
+    public String getPaymentDate() {
+        return paymentDate;
+    }
+
+    public void setPaymentDate(String paymentDate) {
+        this.paymentDate = paymentDate;
     }
 }

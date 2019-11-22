@@ -1,5 +1,8 @@
 package com.chidha.rps.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class StudentPaidFee {
 
     private long id;

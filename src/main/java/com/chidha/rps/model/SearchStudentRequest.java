@@ -1,18 +1,18 @@
 package com.chidha.rps.model;
 
 public class SearchStudentRequest {
-    private long admissionNumner;
+    private long admissionNumber;
     private String standard;
 
     public SearchStudentRequest() {
     }
 
-    public long getAdmissionNumner() {
-        return admissionNumner;
+    public long getAdmissionNumber() {
+        return admissionNumber;
     }
 
-    public void setAdmissionNumner(long admissionNumner) {
-        this.admissionNumner = admissionNumner;
+    public void setAdmissionNumber(long admissionNumber) {
+        this.admissionNumber = admissionNumber;
     }
 
     public String getStandard() {

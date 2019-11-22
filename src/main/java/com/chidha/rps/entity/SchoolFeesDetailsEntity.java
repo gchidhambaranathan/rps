@@ -7,8 +7,8 @@ import javax.persistence.*;
 public class SchoolFeesDetailsEntity {
 
     @Id
-    @Column(name = "SECTION")
-    private String section;
+    @Column(name = "STANDARD")
+    private String standard;
 
     @Column(name = "TERM1_FEEES")
     private long term1Fees;
@@ -22,12 +22,12 @@ public class SchoolFeesDetailsEntity {
     public SchoolFeesDetailsEntity() {
     }
 
-    public String getSection() {
-        return section;
+    public String getStandard() {
+        return standard;
     }
 
-    public void setSection(String section) {
-        this.section = section;
+    public void setStandard(String standard) {
+        this.standard = standard;
     }
 
     public long getTerm1Fees() {

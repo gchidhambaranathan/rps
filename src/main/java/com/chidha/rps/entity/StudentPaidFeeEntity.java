@@ -7,9 +7,9 @@ import javax.persistence.*;
 public class StudentPaidFeeEntity {
 
     @Id
-    @GeneratedValue
-    @Column(name = "FEE_ID")
-    private long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "PAID_FEE_ID")
+    private long paidFeeId;
 
     @Column(name = "TERM1_FEES")
     private long term1Fees;
@@ -27,12 +27,12 @@ public class StudentPaidFeeEntity {
     public StudentPaidFeeEntity() {
     }
 
-    public long getId() {
-        return id;
+    public long getPaidFeeId() {
+        return paidFeeId;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setPaidFeeId(long paidFeeId) {
+        this.paidFeeId = paidFeeId;
     }
 
     public long getTerm1Fees() {

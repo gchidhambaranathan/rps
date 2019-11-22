@@ -3,7 +3,7 @@ package com.chidha.rps.model;
 
 public class SchoolFeesDetails {
 
-    private String section;
+    private String standard;
     private long term1Fees;
     private long term2Fees;
     private long term3Fees;
@@ -11,12 +11,12 @@ public class SchoolFeesDetails {
     public SchoolFeesDetails() {
     }
 
-    public String getSection() {
-        return section;
+    public String getStandard() {
+        return standard;
     }
 
-    public void setSection(String section) {
-        this.section = section;
+    public void setStandard(String standard) {
+        this.standard = standard;
     }
 
     public long getTerm1Fees() {
